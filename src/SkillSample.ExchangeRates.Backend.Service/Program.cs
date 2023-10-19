@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SkillSample.ExchangeRates.Backend.Data;
+using SkillSample.ExchangeRates.Backend.UseCases;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ builder.Services.AddDbContext<ExchangeRatesDbContext>((ctx, options) =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DbContext"));
 });
+
+builder.Services.AddUseCases();
 
 builder.Services.AddControllers();
 
