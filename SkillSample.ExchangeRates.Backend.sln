@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{13076386-7922-4D49-8635-A2F51D5499B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.Domain.UnitTests", "test\SkillSample.ExchangeRates.Backend.Domain.UnitTests\SkillSample.ExchangeRates.Backend.Domain.UnitTests.csproj", "{50A653F8-7253-4B97-BF5A-C49D7906D185}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,9 +37,16 @@ Global
 		{A5566CB7-EA17-47FF-9212-B1B305560771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5566CB7-EA17-47FF-9212-B1B305560771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5566CB7-EA17-47FF-9212-B1B305560771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A653F8-7253-4B97-BF5A-C49D7906D185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A653F8-7253-4B97-BF5A-C49D7906D185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A653F8-7253-4B97-BF5A-C49D7906D185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A653F8-7253-4B97-BF5A-C49D7906D185}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50A653F8-7253-4B97-BF5A-C49D7906D185} = {13076386-7922-4D49-8635-A2F51D5499B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F11BAE4F-59DF-4F84-A059-F8A99FD9C393}
