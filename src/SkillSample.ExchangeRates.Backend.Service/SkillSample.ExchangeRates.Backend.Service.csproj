@@ -18,6 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SkillSample.ExchangeRates.Backend.Data\SkillSample.ExchangeRates.Backend.Data.csproj" />
+    <ProjectReference Include="..\SkillSample.ExchangeRates.Backend.Infrastructure\SkillSample.ExchangeRates.Backend.Infrastructure.csproj" />
+    <ProjectReference Include="..\SkillSample.ExchangeRates.Backend.NBP\SkillSample.ExchangeRates.Backend.NBP.csproj" />
     <ProjectReference Include="..\SkillSample.ExchangeRates.Backend.UseCases\SkillSample.ExchangeRates.Backend.UseCases.csproj" />
   </ItemGroup>
 

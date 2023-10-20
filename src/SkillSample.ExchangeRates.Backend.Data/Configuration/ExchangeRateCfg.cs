@@ -20,8 +20,7 @@ namespace SkillSample.ExchangeRates.Backend.Data.Configuration
                 .IsRequired()
                 .HasMaxLength(18);
 
-            builder.Property(er => er.TradingDate)
-                .IsRequired();
+            builder.Property(er => er.TradingDate);
 
             builder.Property(er => er.EffectiveDate)
                 .IsRequired();

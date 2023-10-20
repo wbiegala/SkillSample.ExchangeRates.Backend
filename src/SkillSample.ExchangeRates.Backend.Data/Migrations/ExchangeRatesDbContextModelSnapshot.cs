@@ -41,7 +41,8 @@ namespace SkillSample.ExchangeRates.Backend.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Code");
+                    b.HasIndex("Code")
+                        .IsUnique();
 
                     b.ToTable("Currencies");
                 });
@@ -99,7 +100,7 @@ namespace SkillSample.ExchangeRates.Backend.Data.Migrations
                         .HasMaxLength(18)
                         .HasColumnType("nvarchar(18)");
 
-                    b.Property<DateTime>("TradingDate")
+                    b.Property<DateTime?>("TradingDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");

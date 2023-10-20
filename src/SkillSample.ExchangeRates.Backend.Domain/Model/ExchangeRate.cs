@@ -7,7 +7,7 @@ namespace SkillSample.ExchangeRates.Backend.Domain.Model
     {
         public string Table {  get; private set; }
         public string TableNumber { get; private set; }
-        public DateTime TradingDate { get; private set; }
+        public DateTime? TradingDate { get; private set; }
         public DateTime EffectiveDate { get; private set; }
         public IReadOnlyCollection<DailyRate> Rates => _rates.ToList();
 
@@ -16,7 +16,7 @@ namespace SkillSample.ExchangeRates.Backend.Domain.Model
         /// </summary>
         protected ExchangeRate() { }
 
-        public ExchangeRate(string table, string tableNumber, DateTime tradingDate, DateTime effectiveDate, IEnumerable<RateEntry> rates)
+        public ExchangeRate(string table, string tableNumber, DateTime? tradingDate, DateTime effectiveDate, IEnumerable<RateEntry> rates)
         {
             Table = table;
             TableNumber = tableNumber;
@@ -35,7 +35,7 @@ namespace SkillSample.ExchangeRates.Backend.Domain.Model
                 }
             }
 
-            AddEvent(new ExchangeRatesUpdatedEvent());
+            AddEvent(new ExchangeRatesUpdatedEvent { EventId = Guid.NewGuid(), EffectiveDate = effectiveDate });
         }
 
         public record RateEntry

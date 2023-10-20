@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.Service", "src\SkillSample.ExchangeRates.Backend.Service\SkillSample.ExchangeRates.Backend.Service.csproj", "{8B911370-7D6A-4A40-A469-1C8BD17A1D0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillSample.ExchangeRates.Backend.Service", "src\SkillSample.ExchangeRates.Backend.Service\SkillSample.ExchangeRates.Backend.Service.csproj", "{8B911370-7D6A-4A40-A469-1C8BD17A1D0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.Domain", "src\SkillSample.ExchangeRates.Backend.Domain\SkillSample.ExchangeRates.Backend.Domain.csproj", "{6CF71EA9-B95C-42E0-8695-44172D7DB2B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillSample.ExchangeRates.Backend.Domain", "src\SkillSample.ExchangeRates.Backend.Domain\SkillSample.ExchangeRates.Backend.Domain.csproj", "{6CF71EA9-B95C-42E0-8695-44172D7DB2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.Data", "src\SkillSample.ExchangeRates.Backend.Data\SkillSample.ExchangeRates.Backend.Data.csproj", "{BEF918FD-69DF-46BA-A42E-A6E57E483355}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillSample.ExchangeRates.Backend.Data", "src\SkillSample.ExchangeRates.Backend.Data\SkillSample.ExchangeRates.Backend.Data.csproj", "{BEF918FD-69DF-46BA-A42E-A6E57E483355}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.UseCases", "src\SkillSample.ExchangeRates.Backend.UseCases\SkillSample.ExchangeRates.Backend.UseCases.csproj", "{A5566CB7-EA17-47FF-9212-B1B305560771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillSample.ExchangeRates.Backend.UseCases", "src\SkillSample.ExchangeRates.Backend.UseCases\SkillSample.ExchangeRates.Backend.UseCases.csproj", "{A5566CB7-EA17-47FF-9212-B1B305560771}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{13076386-7922-4D49-8635-A2F51D5499B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.Domain.UnitTests", "test\SkillSample.ExchangeRates.Backend.Domain.UnitTests\SkillSample.ExchangeRates.Backend.Domain.UnitTests.csproj", "{50A653F8-7253-4B97-BF5A-C49D7906D185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillSample.ExchangeRates.Backend.Domain.UnitTests", "test\SkillSample.ExchangeRates.Backend.Domain.UnitTests\SkillSample.ExchangeRates.Backend.Domain.UnitTests.csproj", "{50A653F8-7253-4B97-BF5A-C49D7906D185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.UseCases.UnitTests", "test\SkillSample.ExchangeRates.Backend.UseCases.UnitTests\SkillSample.ExchangeRates.Backend.UseCases.UnitTests.csproj", "{F1F1247F-38DA-417A-9450-16D8886AF57C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.Infrastructure", "src\SkillSample.ExchangeRates.Backend.Infrastructure\SkillSample.ExchangeRates.Backend.Infrastructure.csproj", "{F9CE9D7B-CC1C-44EF-8D5D-8926A9D430F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillSample.ExchangeRates.Backend.NBP", "src\SkillSample.ExchangeRates.Backend.NBP\SkillSample.ExchangeRates.Backend.NBP.csproj", "{C0F2648D-0CB2-4DB7-BE3D-A46B20AA28CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +47,25 @@ Global
 		{50A653F8-7253-4B97-BF5A-C49D7906D185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50A653F8-7253-4B97-BF5A-C49D7906D185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50A653F8-7253-4B97-BF5A-C49D7906D185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F1247F-38DA-417A-9450-16D8886AF57C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F1247F-38DA-417A-9450-16D8886AF57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F1247F-38DA-417A-9450-16D8886AF57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F1247F-38DA-417A-9450-16D8886AF57C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CE9D7B-CC1C-44EF-8D5D-8926A9D430F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CE9D7B-CC1C-44EF-8D5D-8926A9D430F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CE9D7B-CC1C-44EF-8D5D-8926A9D430F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CE9D7B-CC1C-44EF-8D5D-8926A9D430F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F2648D-0CB2-4DB7-BE3D-A46B20AA28CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F2648D-0CB2-4DB7-BE3D-A46B20AA28CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F2648D-0CB2-4DB7-BE3D-A46B20AA28CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F2648D-0CB2-4DB7-BE3D-A46B20AA28CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{50A653F8-7253-4B97-BF5A-C49D7906D185} = {13076386-7922-4D49-8635-A2F51D5499B2}
+		{F1F1247F-38DA-417A-9450-16D8886AF57C} = {13076386-7922-4D49-8635-A2F51D5499B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F11BAE4F-59DF-4F84-A059-F8A99FD9C393}

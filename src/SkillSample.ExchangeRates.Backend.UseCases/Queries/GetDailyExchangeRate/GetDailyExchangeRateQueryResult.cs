@@ -2,9 +2,10 @@
 {
     public record GetDailyExchangeRateQueryResult
     {
-        public string TableName { get; init; }
+        public DateTime? Date { get; init; }
+        public string? TableNumber { get; init; }
 
-        public IEnumerable<RateEntry> Rates { get; init; }
+        public IEnumerable<RateEntry>? Rates { get; init; }
 
         public record RateEntry
         {

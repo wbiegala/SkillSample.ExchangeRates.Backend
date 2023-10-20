@@ -33,7 +33,7 @@ namespace SkillSample.ExchangeRates.Backend.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Table = table.Column<string>(type: "nvarchar(1)", maxLength: 1, nullable: false),
                     TableNumber = table.Column<string>(type: "nvarchar(18)", maxLength: 18, nullable: false),
-                    TradingDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    TradingDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     EffectiveDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -73,7 +73,8 @@ namespace SkillSample.ExchangeRates.Backend.Data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Currencies_Code",
                 table: "Currencies",
-                column: "Code");
+                column: "Code",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_DailyRates_CurrencyId",

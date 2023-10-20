@@ -1,6 +1,8 @@
-﻿namespace SkillSample.ExchangeRates.Backend.Domain.Base
+﻿using MediatR;
+
+namespace SkillSample.ExchangeRates.Backend.Domain.Base
 {
-    public interface IDomainEvent
+    public interface IDomainEvent : INotification
     {
         Guid EventId { get; }
     }

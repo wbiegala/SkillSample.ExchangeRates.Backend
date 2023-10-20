@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using SkillSample.ExchangeRates.Backend.Data;
 using SkillSample.ExchangeRates.Backend.UseCases;
+using SkillSample.ExchangeRates.Backend.Infrastructure;
+using SkillSample.ExchangeRates.Backend.NBP;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,11 @@ builder.Services.AddDbContext<ExchangeRatesDbContext>((ctx, options) =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DbContext"));
 });
 
+builder.Services.AddNbpIntegration(cfg =>
+{
+    cfg.UseCurrencyTable("B");
+});
+builder.Services.AddInfrastructure();
 builder.Services.AddUseCases();
 
 builder.Services.AddControllers();

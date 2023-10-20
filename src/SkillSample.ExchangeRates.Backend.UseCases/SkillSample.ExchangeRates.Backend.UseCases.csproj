@@ -12,6 +12,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SkillSample.ExchangeRates.Backend.Data\SkillSample.ExchangeRates.Backend.Data.csproj" />
+    <ProjectReference Include="..\SkillSample.ExchangeRates.Backend.Infrastructure\SkillSample.ExchangeRates.Backend.Infrastructure.csproj" />
+    <ProjectReference Include="..\SkillSample.ExchangeRates.Backend.NBP\SkillSample.ExchangeRates.Backend.NBP.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+			<_Parameter1>SkillSample.ExchangeRates.Backend.UseCases.UnitTests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
 
 </Project>

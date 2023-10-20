@@ -12,7 +12,7 @@ using SkillSample.ExchangeRates.Backend.Data;
 namespace SkillSample.ExchangeRates.Backend.Data.Migrations
 {
     [DbContext(typeof(ExchangeRatesDbContext))]
-    [Migration("20231019221352_INIT")]
+    [Migration("20231020154611_INIT")]
     partial class INIT
     {
         /// <inheritdoc />
@@ -44,7 +44,8 @@ namespace SkillSample.ExchangeRates.Backend.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Code");
+                    b.HasIndex("Code")
+                        .IsUnique();
 
                     b.ToTable("Currencies");
                 });
@@ -102,7 +103,7 @@ namespace SkillSample.ExchangeRates.Backend.Data.Migrations
                         .HasMaxLength(18)
                         .HasColumnType("nvarchar(18)");
 
-                    b.Property<DateTime>("TradingDate")
+                    b.Property<DateTime?>("TradingDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");

@@ -17,7 +17,8 @@ namespace SkillSample.ExchangeRates.Backend.Data.Configuration
                 .IsRequired()
                 .HasMaxLength(3);
 
-            builder.HasIndex(c => c.Code);
+            builder.HasIndex(c => c.Code)
+                .IsUnique();
         }
     }
 }

@@ -4,7 +4,6 @@ namespace SkillSample.ExchangeRates.Backend.UseCases.Commands.DownloadExchangeRa
 {
     public record DownloadExchangeRatesCommand : IRequest
     {
-        public string Table { get; init; } = "A";
         public DateTime? Date { get; init; }
     }
 }
