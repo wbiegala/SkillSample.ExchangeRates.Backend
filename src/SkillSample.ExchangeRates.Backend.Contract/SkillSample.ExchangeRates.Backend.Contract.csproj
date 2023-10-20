@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<PackageId>SkillSample.ExchangeRates.Backend.Contract</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>wbiegala</Authors>
+		<Copyright>@wbiegala 2023</Copyright>
+		<Description>Contract for ExchangeRates API</Description>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageOutputPath>..\..\packages</PackageOutputPath>
+		<BaseOutputPath>..\..\artifacts</BaseOutputPath>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
+
+</Project>

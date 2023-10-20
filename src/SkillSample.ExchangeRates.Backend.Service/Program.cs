@@ -3,6 +3,7 @@ using SkillSample.ExchangeRates.Backend.Data;
 using SkillSample.ExchangeRates.Backend.UseCases;
 using SkillSample.ExchangeRates.Backend.Infrastructure;
 using SkillSample.ExchangeRates.Backend.NBP;
+using SkillSample.ExchangeRates.Backend.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,8 @@ builder.Services.AddNbpIntegration(cfg =>
 });
 builder.Services.AddInfrastructure();
 builder.Services.AddUseCases();
+
+builder.Services.AddScoped<ExceptionHandler>();
 
 builder.Services.AddControllers();
 
@@ -35,6 +38,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseMiddleware<ExceptionHandler>();
 
 app.MapControllers();
 

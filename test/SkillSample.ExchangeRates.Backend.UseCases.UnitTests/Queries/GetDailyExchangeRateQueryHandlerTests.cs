@@ -23,7 +23,7 @@ namespace SkillSample.ExchangeRates.Backend.UseCases.UnitTests.Queries
 
             // ASSERT
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.Date, Is.EqualTo(EFFECTIVE_DATE_2));
+            Assert.That(result.EffectiveDate, Is.EqualTo(EFFECTIVE_DATE_2));
             Assert.That(result.TableNumber, Is.EqualTo(TABLE_NUMBER_2));
         }
 
@@ -40,7 +40,7 @@ namespace SkillSample.ExchangeRates.Backend.UseCases.UnitTests.Queries
 
             // ASSERT
             Assert.That(result, Is.Not.Null);
-            Assert.That(result.Date, Is.EqualTo(EFFECTIVE_DATE_1));
+            Assert.That(result.EffectiveDate, Is.EqualTo(EFFECTIVE_DATE_1));
             Assert.That(result.TableNumber, Is.EqualTo(TABLE_NUMBER_1));
         }
 

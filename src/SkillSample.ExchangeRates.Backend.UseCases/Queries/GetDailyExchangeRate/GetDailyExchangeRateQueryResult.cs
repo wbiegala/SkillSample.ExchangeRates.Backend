@@ -2,7 +2,7 @@
 {
     public record GetDailyExchangeRateQueryResult
     {
-        public DateTime? Date { get; init; }
+        public DateTime? EffectiveDate { get; init; }
         public string? TableNumber { get; init; }
 
         public IEnumerable<RateEntry>? Rates { get; init; }

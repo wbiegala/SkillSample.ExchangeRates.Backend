@@ -35,7 +35,7 @@ namespace SkillSample.ExchangeRates.Backend.UseCases.Queries.GetDailyExchangeRat
 
                 return new GetDailyExchangeRateQueryResult
                 {
-                    Date = result?.EffectiveDate,
+                    EffectiveDate = result?.EffectiveDate,
                     TableNumber = result?.TableNumber,
                     Rates = result?.Rates.Select(rate => new GetDailyExchangeRateQueryResult.RateEntry
                     {
