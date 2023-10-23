@@ -15,7 +15,14 @@ namespace SkillSample.ExchangeRates.Backend.Data.Configuration
                 .HasForeignKey(dr => dr.CurrencyId);
 
             builder.Property(dr => dr.Mid)
-                .IsRequired();
+                .IsRequired()
+                .HasPrecision(18, 4);
+
+            builder.Property(dr => dr.Bid)
+                .HasPrecision(18, 4);
+
+            builder.Property(dr => dr.Ask)
+                .HasPrecision(18, 4);
         }
     }
 }
