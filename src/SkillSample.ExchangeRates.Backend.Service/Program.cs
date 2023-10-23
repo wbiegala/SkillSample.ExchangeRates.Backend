@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ExchangeRatesDbContext>((ctx, options) =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DbContext"));
+    options.UseSqlServer(Environment.GetEnvironmentVariable("DbConnectionString"));
 });
 
 builder.Services.AddNbpIntegration(cfg =>

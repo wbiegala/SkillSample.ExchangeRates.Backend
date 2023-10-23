@@ -16,7 +16,8 @@
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:7215;http://localhost:5110",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DbConnectionString": "Server=(localdb)\\mssqllocaldb;Database=ExchangeRates;Trusted_Connection=True;"
       }
     },
     "IIS Express": {
@@ -24,7 +25,8 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DbConnectionString": "Server=(localdb)\\mssqllocaldb;Database=ExchangeRates;Trusted_Connection=True;"
       }
     }
   }
