@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59905",
+      "sslPort": 44352
+    }
+  },
+  "profiles": {
+    "SkillSample.ExchangeRates.Backend.Service": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7215;http://localhost:5110",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DbConnectionString": "Server=(localdb)\\mssqllocaldb;Database=ExchangeRates;Trusted_Connection=True;"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DbConnectionString": "Server=(localdb)\\mssqllocaldb;Database=ExchangeRates;Trusted_Connection=True;"
+      }
+    }
+  }
+}
