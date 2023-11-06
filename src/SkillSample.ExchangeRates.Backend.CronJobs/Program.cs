@@ -5,10 +5,11 @@ using SkillSample.ExchangeRates.Backend.UseCases;
 using SkillSample.ExchangeRates.Backend.Infrastructure;
 using SkillSample.ExchangeRates.Backend.NBP;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var host = new HostBuilder()
     .ConfigureFunctionsWorkerDefaults()
-    .ConfigureServices(services =>
+    .ConfigureServices((context, services) =>
     {
         services.AddInfrastructure();
 
@@ -20,7 +21,8 @@ var host = new HostBuilder()
 
         services.AddDbContext<ExchangeRatesDbContext>((ctx, options) =>
         {
-            options.UseSqlServer(Environment.GetEnvironmentVariable("DbConnectionString"));
+            var connStr = context.Configuration.GetConnectionString("DbConnectionString");
+            options.UseSqlServer(connStr);
         });
 
         services.AddUseCases();
