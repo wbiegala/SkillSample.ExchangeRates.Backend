@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SkillSample.ExchangeRates.Backend.Data;
 
@@ -11,9 +12,11 @@ using SkillSample.ExchangeRates.Backend.Data;
 namespace SkillSample.ExchangeRates.Backend.Data.Migrations
 {
     [DbContext(typeof(ExchangeRatesDbContext))]
-    partial class ExchangeRatesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231107113652_Precision-fix")]
+    partial class Precisionfix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
